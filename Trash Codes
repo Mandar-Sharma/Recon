@@ -1,0 +1,115 @@
+__author__ = 'Mandar'
+
+ import numpy as np
+ z_buffer = np.ndarray(shape=(1366,768), dtype=float, order='F')
+
+        #s.line(surface,int(a1[0]),int(b1[0]),int(a2[0]),int(b2[0]),color)
+        #s.line(surface,int(a2[0]),int(b2[0]),int(a3[0]),int(b3[0]),color)
+        #s.line(surface,int(a3[0]),int(b3[0]),int(a4[0]),int(b4[0]),color)
+        #s.line(surface,int(a4[0]),int(b4[0]),int(a1[0]),int(b1[0]),color)
+        #s.line(surface,int(a5[0]),int(b5[0]),int(a6[0]),int(b6[0]),color)
+        #s.line(surface,int(a6[0]),int(b6[0]),int(a7[0]),int(b7[0]),color)
+        #s.line(surface,int(a7[0]),int(b7[0]),int(a8[0]),int(b8[0]),color)
+        #s.line(surface,int(a8[0]),int(b8[0]),int(a5[0]),int(b5[0]),color)
+        #s.line(surface,int(a1[0]),int(b1[0]),int(a5[0]),int(b5[0]),color)
+        #s.line(surface,int(a2[0]),int(b2[0]),int(a6[0]),int(b6[0]),color)
+        #s.line(surface,int(a3[0]),int(b3[0]),int(a7[0]),int(b7[0]),color)
+        #s.line(surface,int(a4[0]),int(b4[0]),int(a8[0]),int(b8[0]),color)
+
+                #s.trianglefill(a,b,c,zvp,zprp,phi,theta,gama,surface,color)
+        #v.trianglefill(a.ver,d.ver,c.ver,zvp,zprp,phi,theta,gama,surface,color)
+        #v.trianglefill(e.ver,f.ver,g.ver,zvp,zprp,phi,theta,gama,surface,color)
+        #v.trianglefill(e.ver,h.ver,g.ver,zvp,zprp,phi,theta,gama,surface,color)
+        #v.trianglefill(a.ver,d.ver,e.ver,zvp,zprp,phi,theta,gama,surface,color)
+        #v.trianglefill(h.ver,d.ver,e.ver,zvp,zprp,phi,theta,gama,surface,color)
+        #v.trianglefill(b.ver,f.ver,g.ver,zvp,zprp,phi,theta,gama,surface,color)
+        #v.trianglefill(c.ver,b.ver,g.ver,zvp,zprp,phi,theta,gama,surface,color)
+        #v.trianglefill(a.ver,e.ver,b.ver,zvp,zprp,phi,theta,gama,surface,color)
+        #v.trianglefill(e.ver,b.ver,f.ver,zvp,zprp,phi,theta,gama,surface,color)
+
+
+        a1,b1=v.final(a11.ver,zvp,zprp,phi,theta,gama)
+        a2,b2=v.final(b11.ver,zvp,zprp,phi,theta,gama)
+        a3,b3=v.final(c11.ver,zvp,zprp,phi,theta,gama)
+        a4,b4=v.final(d11.ver,zvp,zprp,phi,theta,gama)
+        a5,b5=v.final(e11.ver,zvp,zprp,phi,theta,gama)
+        a6,b6=v.final(f11.ver,zvp,zprp,phi,theta,gama)
+        a7,b7=v.final(g11.ver,zvp,zprp,phi,theta,gama)
+        a8,b8=v.final(h11.ver,zvp,zprp,phi,theta,gama)
+
+        """s.line(surface,a1,b1,a2,b2,color)
+        s.line(surface,a2,b2,a3,b3,color)
+        s.line(surface,a3,b3,a4,b4,color)
+        s.line(surface,a4,b4,a1,b1,color)
+        s.line(surface,a5,b5,a6,b6,color)
+        s.line(surface,a6,b6,a7,b7,color)
+        s.line(surface,a7,b7,a8,b8,color)
+        s.line(surface,a8,b8,a5,b5,color)
+        s.line(surface,a1,b1,a5,b5,color)
+        s.line(surface,a2,b2,a6,b6,color)
+        s.line(surface,a3,b3,a7,b7,color)
+        s.line(surface,a4,b4,a8,b8,color)"""
+
+
+        if event.type == pygame.KEYDOWN:
+            if event.key== pygame.K_ESCAPE:
+                stop = True
+        if event.type == pygame.KEYDOWN:
+            if event.key == pygame.K_UP:
+                zprp=zprp-delta
+        if event.type == pygame.KEYDOWN:
+            if event.key == pygame.K_DOWN:
+                zprp=zprp+delta
+        if event.type == pygame.KEYDOWN:
+            if event.key == pygame.K_LEFT:
+                gama=gama+2.5
+        if event.type == pygame.KEYDOWN:
+            if event.key == pygame.K_RIGHT:
+                gama=gama-2.5
+        if event.type == pygame.KEYDOWN:
+            if event.key == pygame.K_PERIOD:
+                theta=theta-2.5
+        if event.type == pygame.KEYDOWN:
+            if event.key == pygame.K_COMMA:
+                theta=theta+2.5
+        if event.type == pygame.KEYDOWN:
+            if event.key == pygame.K_PAGEUP:
+                phi=phi+2.5
+        if event.type == pygame.KEYDOWN:
+            if event.key == pygame.K_PAGEDOWN:
+                phi=phi-2.5
+
+
+# Display some text
+font = pygame.font.Font(None, 20)
+text = font.render("Authentication Successfull", 1, (255,255,255))
+textpos = text.get_rect()
+textpos.centerx = 0
+textpos.centery= 60
+# Blit everything to the screen
+
+
+#Postion
+c1.definecuboidfill(-150,200,10,400,10,400,zvp,zprp,phi,theta,gama,my_screen,z_buffer)
+#
+Pravesh dai
+crossz
+
+    x= crossz((verb-vera),(ver1-vera)).A1
+    y= crossz((verc-verb),(ver1-verb)).A1
+    z= crossz((vera-verc),(ver1-verc)).A1
+    return ((x >= 0) & (y >= 0) & (z >= 0)) | ((x < 0) & (y < 0) & (z < 0))
+
+
+    Cuboid render:
+    #c1.definecuboidfill(100,100,100,150,150,150,zvp,zprp,phi,theta,gama,my_screen,z_buffer)
+
+
+    for i in range(300):
+            for j in range(400):
+                z_buffer[i][j]=99999999.0
+
+
+
+Perfect thin cuboid:
+c1.definecuboidwireframe(-150,200,10,400,10,400,zvp,zprp,phi,theta,gama,my_screen,z_buffer)
